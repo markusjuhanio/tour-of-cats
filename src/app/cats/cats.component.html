@@ -12,7 +12,7 @@
                 <div class="mat-list-item-container">
                     <div matBadge={{cat.id}}></div>
                     <button class="full-width" (click)="selectedCat === cat ? onUnselect(cat) : onSelect(cat)" color="primary" [class.mat-flat-button]="cat === selectedCat" mat-stroked-button>
-                        {{cat.name}}
+                       <span class="text-ellipsis"> {{cat.name}}</span>
                     </button>
                 </div>
             </mat-list-item>

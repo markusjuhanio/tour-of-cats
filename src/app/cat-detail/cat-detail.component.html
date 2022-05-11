@@ -1,7 +1,10 @@
 <div *ngIf="cat">
     <br/>
     <mat-card>
-        <mat-card-title>{{cat.name}}</mat-card-title>
+        <div class="title-container">
+            <mat-card-title class="text-ellipsis">{{cat.name}}</mat-card-title>
+            <mat-icon class="{{cat.gender === 'female' ? 'female' : 'male'}}" aria-hidden="false" aria-label="Example home icon">{{cat.gender}}</mat-icon>
+        </div>
         <mat-divider></mat-divider>
         <br/>
         <mat-card-content>

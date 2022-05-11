@@ -7,3 +7,10 @@ html {
 .full-width {
     width: 100%;
 }
+
+.text-ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

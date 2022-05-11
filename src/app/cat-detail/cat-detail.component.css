@@ -1,0 +1,19 @@
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mat-icon {
+    margin-bottom: 18px;
+    font-size: 32px;
+}
+
+.female {
+    color: #AE3171;
+}
+
+.male {
+    color: #2AA0CE;
+}
