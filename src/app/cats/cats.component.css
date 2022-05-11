@@ -1,0 +1,30 @@
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.mat-list {
+    margin-top: 20px;
+}
+
+.mat-list-item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+.clear-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.clear-icon {
+    font-size: 23px;
+}

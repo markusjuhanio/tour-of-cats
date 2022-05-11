@@ -1,0 +1,16 @@
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messages-container {
+    margin-top: 15px;
+}
+
+.mat-chip {
+    max-width: 98%;
+    margin: auto;
+    overflow-y: auto;
+}

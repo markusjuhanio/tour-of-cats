@@ -1,0 +1,13 @@
+.mat-display-2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 25px;
+}

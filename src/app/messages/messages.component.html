@@ -1,0 +1,10 @@
+    <div class="title-container">
+        <h3>log</h3>
+        <button [disabled]="!messageService.messages.length" (click)="messageService.clear()" mat-flat-button>clear log</button>
+    </div>
+
+    <div class="messages-container">
+        <mat-chip-list class="mat-chip-list-stacked">
+            <mat-chip *ngFor="let message of messageService.messages">{{message}}</mat-chip>
+        </mat-chip-list>
+    </div>

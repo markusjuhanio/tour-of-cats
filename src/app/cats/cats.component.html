@@ -1,0 +1,23 @@
+<div class="main-container">
+    <mat-card>
+        <div class="title-section">
+            <mat-card-title>Cats</mat-card-title>
+            <button *ngIf="selectedCat" (click)="onUnselect(selectedCat)" mat-stroked-button>
+                Unselect
+            </button>
+        </div>
+        <mat-divider></mat-divider>
+        <mat-list>
+            <mat-list-item *ngFor="let cat of cats$ | async">
+                <div class="mat-list-item-container">
+                    <div matBadge={{cat.id}}></div>
+                    <button class="full-width" (click)="selectedCat === cat ? onUnselect(cat) : onSelect(cat)" color="primary" [class.mat-flat-button]="cat === selectedCat" mat-stroked-button>
+                        {{cat.name}}
+                    </button>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+<app-cat-detail [cat]="selectedCat"></app-cat-detail>
+</div>
+
